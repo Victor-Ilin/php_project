@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <h1>Welcome to the Vet Clinic "My Dear Pet" site!</h1>
+    <nav>
+      <a href="registration.htm">Registration</a>
+      <a href="pet.htm">Pet service</a>
+      <a href="appoint_settings.htm">The queue settings</a>
+    </nav>
+    <main>
+      <p>
+        For registration a pet in our database, please, tell us about your pet.
+        Also, you can remove your pet from our database or get more info about.
+      </p>
+      <form method="post" action="DBPet.php">
+        <label>Your username(nickname): </label>
+        <input type="text" name="username" />
+        <br />
+
+        <label>Your pet's name: </label>
+        <input type="text" name="petname" />
+        <br />
+
+        <label>What a kind of your pet? </label>
+        <input type="text" name="kind" />
+        <br />
+
+        <label>Pet breed </label>
+        <input type="text" name="breed" />
+        <br />
+
+        <label>Pet's age: </label>
+        <input type="text" name="age" />
+        <br />
+
+        <button type="submit" name="add">Register a Pet</button>
+
+        <button type="submit" name="delete">
+          Delete a pet from this database
+        </button>
+
+        <button type="submit" name="get">Give me a details about...</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; Viktor Ilin & Tal Chereshnya 2021</p>
+    </footer>
+  </body>
+</html>

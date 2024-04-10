@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queue</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <h1>Welcome to the Vet Clinic "My Dear Pet" site!</h1>
+    <nav>
+      <a href="registration.htm">Registration</a>
+      <a href="pet.htm">Pet service</a>
+      <a href="appoint_settings.htm">The appointment settings</a>
+    </nav>
+    <main>
+      <p>Please, fill this form to assign a appointment:</p>
+      <form method="post" action="DBAppointment.php">
+        <label>Your username(nickname): </label>
+        <input type="text" name="username" />
+        <br />
+
+        <label>Your pet's name: </label>
+        <input type="text" name="petname" />
+        <br />
+
+        <label>Enter the date for appointment: </label>
+        <input type="date" name="date" />
+        <br />
+
+        <label>Choose a time: </label>
+        <input type="time" name="time" />
+        <br />
+
+        <button type="submit" name="add">Register an appointment</button>
+
+        <button type="submit" name="delete">Cancel an appointment</button>
+
+        <button type="submit" name="get">Give me a details about...</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; Viktor Ilin & Tal Chereshnya 2021</p>
+    </footer>
+  </body>
+</html>

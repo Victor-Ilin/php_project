@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <h1>Welcome to the Vet Clinic "My Dear Pet" site!</h1>
+    <nav>
+      <a href="registration.htm">Registration</a>
+      <a href="pet.htm">Pet service</a>
+      <a href="appoint_settings.htm">The queue settings</a>
+    </nav>
+    <main>
+      <p>Please, enter the details for registration:</p>
+
+      <form method="post" action="DBUser.php">
+        <label>Your username(nickname): </label>
+        <input type="text" name="username" />
+        <br />
+
+        <label>You Name: </label>
+        <input type="text" name="name" />
+        <br />
+
+        <label>You Family Name: </label>
+        <input type="text" name="fname" />
+        <br />
+
+        <label>Enter a password: </label>
+        <input type="password" name="password" />
+        <br />
+
+        <button type="submit" name="add">Registration</button>
+
+        <button type="submit" name="delete">Delete me from this database</button>
+
+        <button type="submit" name="get">Give me a details about...</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; Viktor Ilin & Tal Chereshnya 2021</p>
+    </footer>
+  </body>
+</html>
